@@ -181,9 +181,7 @@ nav>ul>li>a {
 
 nav>ul>li>a:hover {
 
-
-    background-color: rgba(155, 185, 248, 0.308);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(102, 166, 234, 0.662);
 }
 
 /*SUBMENU*/
@@ -243,7 +241,7 @@ nav ul li ul li a:hover {
 
 img {
     object-fit: cover;
-    width: 400px;
+    width: 304px;
     height: 500px;
     border-radius: 6px;
 }
