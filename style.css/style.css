@@ -108,6 +108,7 @@ header {
     position: fixed;
     top: 0;
     left: 0%;
+    z-index: 1;
 }
 
 .header__superior {
@@ -233,7 +234,7 @@ nav ul li ul li a {
 }
 
 nav ul li ul li a:hover {
-  
+
     color: rgb(2, 2, 2);
 
     box-shadow: 0px 0px 10px 0px rgba(102, 166, 234, 0.662);
@@ -246,17 +247,26 @@ img {
     border-radius: 6px;
 }
 
-.temporada {
-    padding: 168px;
-    height: 100px;
-    background-image: url(../fotos/spring.jpg)
+/*carrusel*/
+
+.carousel-control-next {
+    right: 0%;
+    top: 10%;
+    z-index: 0;
 }
-
-.temporadatext {
-    text-align: center;
+.carousel-control-prev{
+    left: 0%;
+    top: 10%;
+    z-index: 0;
+}
+.carousel-indicators{
+   visibility: visible;
 
 }
-
+.carousel {
+    position: relative;
+    top: 144px;
+}
 
 section {
     width: 100%;
@@ -344,12 +354,9 @@ form textarea {
 
 .items {
     display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 5px;
-
+    object-fit: contain;
+    justify-content: space-between;
 }
 
 .item {

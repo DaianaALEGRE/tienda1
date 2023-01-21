@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--coneccion con bts-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--coneccion css-->
     <link rel="stylesheet" href="./style.css/style.css">
 
     <title>Alfa</title>
@@ -40,39 +43,73 @@
         </div>
     </header>
 
-    <div class="temporada">
-        <div class="temporadatext">
-            <a href="./pages/sale.html">
-                <h2>Spring sale</h2>
-            </a>
-        </div>
-    </div>
-
-    <!--texto presentacion-->
+    <!--carrusel bts-->
     <div>
-        <h1>Shop</h1>
-    </div>
-    <p>Nuestras prendas están confeccionadas en tejidos de alta calidad,perfectas para tu
-         entrenamientos intensos o simplemente un paseo. En los días más fríos quedan genial debajo de una
-        chaqueta o con un chaleco grueso.</p>
-    <div class="items">
-        <!--ENLACE CON FOTOS INICIO-->
-        <div class="element">
-            <a href="./pages/curvys.html"><img src="./fotos/xl1.jpg" alt="vinculo curvys"></a>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./fotos/sale.gif" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./fotos/indutime.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>PRE-SALE WEB</h5>
+                        <p>Pre-sale del 17 al 29 unicamente online!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./fotos/indusuprise.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SORPRESA</h5>
+                        <p>Winter coming soon! seguinos en nuestras redes y enterate de todas nuestras novedades y no te
+                            olvides de llenar tu formulario para unirte al newlister y obtener beneficios ecxclusivos!!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="element">
-            <a href="./pages/tops.html"><img src="./fotos/t5.jpg" alt="vinculo remeras"></a>
-        </div>
-        <div class="element">
-            <a href="./pages/pants.html"><img src="./fotos/i3.jpg" alt="vinculo pantalones"></a>
-        </div>
-        <div class="element">
-            <a href="./pages/nosotroscontacto.html"><img src="./fotos/c1.jpg" alt="vinculo Contacto "> </a>
-        </div>
-        <div class="element">
-            <a href="./pages/sale.html">
-                <img src="./fotos/i4.jpg">
-            </a>
+
+        <div class="items">
+            <!--ENLACE CON FOTOS INICIO-->
+            <div class="element">
+                <a href="./pages/curvys.html"><img src="./fotos/xl1.jpg" alt="vinculo curvys"></a>
+            </div>
+            <div class="element">
+                <a href="./pages/tops.html"><img src="./fotos/t5.jpg" alt="vinculo remeras"></a>
+            </div>
+            <div class="element">
+                <a href="./pages/pants.html"><img src="./fotos/i3.jpg" alt="vinculo pantalones"></a>
+            </div>
+            <div class="element">
+                <a href="./pages/nosotroscontacto.html"><img src="./fotos/c1.jpg" alt="vinculo Contacto "> </a>
+            </div>
+            <div class="element">
+                <a href="./pages/sale.html">
+                    <img src="./fotos/i4.jpg">
+                </a>
+            </div>
         </div>
     </div>
     <div class="nostros">
@@ -108,14 +145,18 @@
             Seguinos en nuestras redes:
             <div>
 
-                <a target="_blank" href="https://www.instagram.com/">instagram</a>
+                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
             </div>
             <div>
-                <a target="_blank" href="https://www.facebook.com/">facebook</a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
         </section>
 
     </footer>
+    <!-- script bts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <!--script fontawesome-->
     <script src="https://kit.fontawesome.com/1f20ec911a.js" crossorigin="anonymous"></script>
 </body>
