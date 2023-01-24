@@ -37,18 +37,18 @@ h1 h2 {
 }
 
 h1 {
-    font-size: 82px;
+    font-size: 50px;
     font-family: 'M PLUS 1p', sans-serif;
     text-align: center;
-    text-shadow: rgb(255, 230, 132) 1px 0 10px;
-    padding: 80px;
+    text-shadow: rgb(239, 4, 208) 1px 0 10px;
+    padding: 60px;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Trispace', sans-serif;
     text-align: center;
-    text-shadow: rgb(255, 230, 132) 1px 0 10px;
+    text-shadow: rgb(239, 4, 208) 1px 0 10px;
     margin: 40px;
 }
 
@@ -79,7 +79,8 @@ nav ul {
 nav ul li {
     font-family: 'Trispace', sans-serif;
     font-weight: bold;
-    text-shadow: rgb(255 230 132) 10px -4px 6px;
+       text-shadow: rgb(239, 4, 208) 1px 0 10px;
+
 }
 
 
@@ -94,12 +95,13 @@ li {
 
 a {
     text-decoration: none;
-    color: #ab0f61 transition: 1ms;
+    color: #d13689 ;
+    transition: 1ms;
 }
 
 a:hover {
 
-    color: #752b52;
+    color: #f90286;
 }
 
 header {
@@ -180,6 +182,7 @@ nav>ul>li>a {
 
 }
 
+
 nav>ul>li>a:hover {
 
     box-shadow: 0px 0px 10px 0px rgba(102, 166, 234, 0.662);
@@ -248,12 +251,14 @@ img {
 }
 
 .unica {
-    max-width: 304px;
+    max-width: 240px;
+    max-height: 470px;
 }
 
 .fa-solid,
 .fas {
-    color: #ab0f61;
+    color: #000000;
+  
 }
 
 /*carrusel*/
@@ -346,7 +351,7 @@ legend {
 
 .btn {
     height: 34px;
-    width: 65px;
+    width: 79px;
     margin: 10px;
     color: #c781d3;
     background: #cde2f7;
@@ -425,18 +430,32 @@ nav>ul>li:hover {
     top: 70px visibility: visible;
 }
 
+/* medias*/
+@media only screen and (max-width: 959px) and (min-width: 720px) {  
+.unica{
+    max-width: 394px;
+  max-height: 470px;
+  
+}
+img{
+    width: 432px;
+}
 
 
+
+}  
+
+
+
+
+
+}
 
 
 /* 
 
 
-@media only screen and (max-width:768px){
-   *{
-margin: 0%;
 
-   }
    
    
     .col-6{
