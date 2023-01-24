@@ -11,13 +11,23 @@
 
 }
 
-p {
-    color: #2e302a;
+p::first-letter {
+    color: #d13689;
+    font-size: 150%;
 }
+
 
 a {
     text-decoration: none;
-    font-size: 24px;
+    color: #d13689;
+    font-size: 34px;
+    font-family: 'Cormorant Garamond', serif;
+    transition: 1ms;
+}
+
+a:hover {
+
+    color: #f90286;
 }
 
 /*listas*/
@@ -27,43 +37,31 @@ ul {
 
 /*titulos*/
 
-h1 h2 {
-
-
+h1,
+h2,
+h3,
+h4,
+h5 {
     text-align: center;
     margin: revert;
     text-align: center;
-
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: rgb(209 54 137) 1px 1px 6px;
 }
 
 h1 {
     font-size: 50px;
-    font-family: 'M PLUS 1p', sans-serif;
     text-align: center;
-    text-shadow: rgb(239, 4, 208) 1px 0 10px;
-    padding: 60px;
-}
 
-h2 {
-    font-size: 40px;
-    font-family: 'Trispace', sans-serif;
-    text-align: center;
-    text-shadow: rgb(239, 4, 208) 1px 0 10px;
-    margin: 40px;
+    padding: 60px;
 }
 
 h3 {
     font-size: 30px;
-    font-family: 'Trispace', sans-serif;
-    text-align: center;
 }
 
 /*  * selector universal para reseteo de estilos por default del html*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* nav link*/
 nav ul {
@@ -79,30 +77,21 @@ nav ul {
 nav ul li {
     font-family: 'Trispace', sans-serif;
     font-weight: bold;
-       text-shadow: rgb(239, 4, 208) 1px 0 10px;
+    text-shadow: rgb(209 54 137) 1px 1px 6px;
 
 }
 
-
 /*listas*/
 ul {
+
     list-style-type: none;
 }
 
 li {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
 }
 
-a {
-    text-decoration: none;
-    color: #d13689 ;
-    transition: 1ms;
-}
-
-a:hover {
-
-    color: #f90286;
-}
 
 header {
     background-image: url(../fotos/spring.jpg);
@@ -250,6 +239,7 @@ img {
     border-radius: 6px;
 }
 
+/*index imagen*/
 .unica {
     max-width: 240px;
     max-height: 470px;
@@ -258,11 +248,10 @@ img {
 .fa-solid,
 .fas {
     color: #000000;
-  
+
 }
 
 /*carrusel*/
-
 .carousel-control-next {
     right: 0%;
     top: 10%;
@@ -275,7 +264,7 @@ img {
     z-index: 0;
 }
 
-.carousel-indicators{
+.carousel-indicators {
     z-index: 0;
 }
 
@@ -286,7 +275,7 @@ img {
     background: rgb(0, 0, 0);
 }
 
-i{
+i {
     color: rgb(253 239 242);
 }
 
@@ -303,9 +292,7 @@ footer {
 
 }
 
-/*
-formulario
-*/
+/*formulario*/
 form {
     background-image: url(../fotos/spring.jpg);
     height: 408px;
@@ -347,6 +334,11 @@ legend {
     background-color: #cde2f7;
     color: #c781d3;
     padding: 3px 6px;
+}
+
+.btn {
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d13689;
 }
 
 .btn {
@@ -392,14 +384,24 @@ form textarea {
 }
 
 button {
-    background-color: #f8e1a685;
+    background-color: #f4edf1;
     border: 2px solid;
     border-radius: 10px;
     margin: 4px;
-    color: #c781d3;
+    color: #100e14;
     padding: 6px;
-    font-family: 'Trispace';
-    box-shadow: 3px 1px 2px;
+    font-family: 'Cormorant Garamond', serif;
+    box-shadow: 3px 1px 0px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+button:hover {
+    background-color: #d2388a;
+}
+
+.tex {
+    align-items: center;
+
 }
 
 .nav-enlace {
@@ -431,44 +433,27 @@ nav>ul>li:hover {
 }
 
 /* medias*/
-@media only screen and (max-width: 959px) and (min-width: 720px) {  
-.unica{
-    max-width: 394px;
-  max-height: 470px;
-  
-}
-img{
-    width: 432px;
-}
-
-
-
-}  
-
-
-
-
-
-}
-
-
-/* 
-
-
-
-   
-   
-    .col-6{
-
-        display: flex;
-        width: 100%;
+@media only screen and (max-width: 959px) and (min-width: 720px) {
+    .unica {
+        max-width: 348px;
+        max-height: 470px;
     }
-    .items { justify-content: center;}
 
+    img {
+        width: 432px;
+    }
 
-.col-12{
-    display: grid;
 }
-.container{
-    visibility: unset;
-}*/
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+
+    .items {
+        justify-content: center;
+    }
+
+    .unica {
+        max-width: 320px;
+        max-height: 471px;
+    }
+
+}
