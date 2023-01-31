@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": " trabajando con sass",
   "main": "index.js",
-  "scripts": {
-     "build-sass": "node-sass --include-path scss ./scss/style.scss -w"
+ "scripts": {
+     "build-sass": "node-sass --include-path scss ./scss/style.scss  ./css/style.css -w"
 
   },
   "repository": {
@@ -16,5 +16,29 @@
   "bugs": {
     "url": "https://github.com/DaianaALEGRE/tienda1/issues"
   },
-  "homepage": "https://github.com/DaianaALEGRE/tienda1#readme"
+  "homepage": "https://github.com/DaianaALEGRE/tienda1#readme",
+  "dependencies": {
+    "anymatch": "^3.1.3",
+    "binary-extensions": "^2.2.0",
+    "braces": "^3.0.2",
+    "chokidar": "^3.5.3",
+    "fill-range": "^7.0.1",
+    "glob-parent": "^5.1.2",
+    "immutable": "^4.2.2",
+    "is-binary-path": "^2.1.0",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "node-bin-setup": "^1.1.3",
+    "normalize-path": "^3.0.0",
+    "picomatch": "^2.3.1",
+    "readdirp": "^3.6.0",
+    "source-map-js": "^1.0.2",
+    "to-regex-range": "^5.0.1"
+  },
+  "devDependencies": {
+    "node": "^18.13.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.57.1"
+  }
 }
