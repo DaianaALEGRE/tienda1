@@ -4,13 +4,14 @@ input {
 
 }
 
+
 /*index imagen*/
 .unica {
     max-width: 240px;
     max-height: 470px;
 }
 
-button {
+.bt {
     background-color: #f4edf1;
     border: 2px solid;
     border-radius: 10px;
@@ -22,7 +23,7 @@ button {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-button:hover {
+.bt:hover {
     background-color: #d2388a;
 }
 

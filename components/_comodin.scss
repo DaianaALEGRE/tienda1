@@ -1,5 +1,12 @@
 
-
+.linetop {
+    color: RGB(253 239 242);
+    text-shadow: 0 0 10px RGB(253 102 195), 0 0 20px RGB(253 102 195), 0 0 40px RGB(198 80 153);
+    transition: 2s ease;
+}
+.linetop:hover{
+   color: #000000;
+}
 
 p::first-letter {
     color: $color ;
@@ -37,12 +44,11 @@ h5 {
 
 h1 {
     font-size: 30px;
-    text-align: center;
     padding: 5px;
 }
-h2{ font-size: 26;}
+h2{ font-size: 18px;}
 h3 {
-    font-size: 18px;
+    font-size: 16px;
 }
 h4{ font-size: 14px;}
 
@@ -131,6 +137,6 @@ p {
 
 }
 
-body {
+body {margin: 4px;
     background-color: #fefefe;
 }
