@@ -1,0 +1,31 @@
+input {
+    border: 5px solid #cde2f7;
+    border-radius: 4px;
+
+}
+
+/*index imagen*/
+.unica {
+    max-width: 240px;
+    max-height: 470px;
+}
+
+button {
+    background-color: #f4edf1;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 4px;
+    color: #100e14;
+    padding: 6px;
+    font-family: 'Cormorant Garamond', serif;
+    box-shadow: 3px 1px 0px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+button:hover {
+    background-color: #d2388a;
+}
+
+.tex {
+    align-items: center;
+}

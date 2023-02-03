@@ -1,0 +1,26 @@
+
+/* medias*/
+@media only screen and (max-width: 959px) and (min-width: 720px) {
+    .unica {
+        max-width: 348px;
+        max-height: 470px;
+    }
+
+    img {
+        width: 432px;
+    }
+
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+
+    .items {
+        justify-content: center;
+    }
+
+    .unica {
+        max-width: 320px;
+        max-height: 471px;
+    }}
+
+

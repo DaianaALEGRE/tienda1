@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&family=Press+Start+2P&family=Trispace:wght@200&display=swap');
+
+
+
+/*  * selector universal para reseteo de estilos por default del html*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+
+}
