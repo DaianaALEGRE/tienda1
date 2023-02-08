@@ -237,15 +237,22 @@ p {
   font-size: 30px;
   font-family: 'Trispace', sans-serif; }
 
+.card {
+  width: 18rem; }
+
 .btn {
   height: 34px;
-  width: 79px;
+  width: 91px;
   margin: 10px;
   color: #c781d3;
   background: #cde2f7;
   border-bottom-color: aqua;
   border: aqua;
-  border: radius 10px; }
+  border: radius 10px;
+  transition: .2s ease-in-out; }
+
+.btn:hover {
+  background-color: #ec32a8; }
 
 .d-btn {
   display: flex;
@@ -269,6 +276,17 @@ p {
   gap: 12px;
   box-shadow: 6px 14px 20px 7px #cde2f7;
   border-radius: 10px; }
+
+.row {
+  justify-content: center;
+  gap: 15px; }
+
+.card-img, .card-img-top {
+  margin-top: 12px; }
+
+.card-text {
+  align-content: center;
+  font-size: 15px; }
 
 body {
   margin: 4px;
@@ -345,9 +363,14 @@ form textarea {
   resize: none; }
 
 /* medias*/
-@media only screen and (max-width: 967px) and (min-width: 872px) {
+@media only screen and (max-width: 1063px) and (min-width: 968px) {
   .unica {
-    max-width: 216px;
+    max-width: 239px;
+    max-height: 470px; } }
+
+@media only screen and (max-width: 969px) and (min-width: 872px) {
+  .unica {
+    max-width: 264px;
     max-height: 470px; } }
 
 @media only screen and (max-width: 871px) and (min-width: 720px) {
@@ -357,7 +380,9 @@ form textarea {
   img {
     width: 432px; } }
 
-@media only screen and (max-width: 479px) and (min-width: 320px) {
+@media only screen and (max-width: 517px) and (min-width: 220px) {
+  .header__superior {
+    justify-content: center; }
   .items {
     justify-content: center; }
   .unica {

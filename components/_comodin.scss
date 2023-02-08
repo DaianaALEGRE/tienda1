@@ -1,11 +1,11 @@
-
 .linetop {
     color: RGB(253 239 242);
     text-shadow: 0 0 10px RGB(253 102 195), 0 0 20px RGB(253 102 195), 0 0 40px RGB(198 80 153);
     transition: 2s ease;
 }
-.linetop:hover{
-   color: #000000;
+
+.linetop:hover {
+    color: #000000;
 }
 
 p::first-letter {
@@ -36,7 +36,7 @@ h3,
 h4,
 h5 {
     text-align: center;
-   margin: revert;
+    margin: revert;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     text-shadow: RGB(209 54 137);
@@ -46,11 +46,18 @@ h1 {
     font-size: 30px;
     padding: 5px;
 }
-h2{ font-size: 18px;}
+
+h2 {
+    font-size: 18px;
+}
+
 h3 {
     font-size: 16px;
 }
-h4{ font-size: 14px;}
+
+h4 {
+    font-size: 14px;
+}
 
 
 img {
@@ -98,16 +105,24 @@ p {
     font-family: 'Trispace', sans-serif;
 }
 
-
+.card{
+    width: 18rem;
+  
+}
 .btn {
     height: 34px;
-    width: 79px;
+    width: 91px;
     margin: 10px;
     color: #c781d3;
     background: #cde2f7;
     border-bottom-color: aqua;
     border: aqua;
     border: radius 10px;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: $color;
 }
 
 .d-btn {
@@ -136,7 +151,19 @@ p {
     border-radius: 10px;
 
 }
+.row{
+    justify-content: center;
+    gap:15px;
+}
+.card-img, .card-img-top{
+    margin-top:12px;
+}
 
-body {margin: 4px;
+.card-text{
+    align-content: center;
+    font-size: 15px;
+}
+body {
+    margin: 4px;
     background-color: #fefefe;
 }
