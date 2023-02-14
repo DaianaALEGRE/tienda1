@@ -107,6 +107,7 @@ p {
 
 .card{
     width: 18rem;
+    margin: 12px;
   
 }
 .btn {
@@ -153,10 +154,11 @@ p {
 }
 .row{
     justify-content: center;
-    gap:15px;
+   
 }
 .card-img, .card-img-top{
     margin-top:12px;
+
 }
 
 .card-text{

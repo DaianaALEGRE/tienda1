@@ -238,7 +238,8 @@ p {
   font-family: 'Trispace', sans-serif; }
 
 .card {
-  width: 18rem; }
+  width: 18rem;
+  margin: 12px; }
 
 .btn {
   height: 34px;
@@ -278,8 +279,7 @@ p {
   border-radius: 10px; }
 
 .row {
-  justify-content: center;
-  gap: 15px; }
+  justify-content: center; }
 
 .card-img, .card-img-top {
   margin-top: 12px; }
@@ -363,14 +363,9 @@ form textarea {
   resize: none; }
 
 /* medias*/
-@media only screen and (max-width: 1063px) and (min-width: 968px) {
+@media only screen and (max-width: 967px) and (min-width: 872px) {
   .unica {
-    max-width: 239px;
-    max-height: 470px; } }
-
-@media only screen and (max-width: 969px) and (min-width: 872px) {
-  .unica {
-    max-width: 264px;
+    max-width: 216px;
     max-height: 470px; } }
 
 @media only screen and (max-width: 871px) and (min-width: 720px) {
@@ -380,9 +375,7 @@ form textarea {
   img {
     width: 432px; } }
 
-@media only screen and (max-width: 517px) and (min-width: 220px) {
-  .header__superior {
-    justify-content: center; }
+@media only screen and (max-width: 479px) and (min-width: 320px) {
   .items {
     justify-content: center; }
   .unica {
