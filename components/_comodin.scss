@@ -63,7 +63,7 @@ h4 {
 img {
     display: flex;
     object-fit: cover;
-    width: 304px;
+    @include tamanio(auto,304px);
     border-radius: 6px;
 }
 

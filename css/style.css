@@ -198,6 +198,7 @@ img {
   display: flex;
   object-fit: cover;
   width: 304px;
+  height: auto;
   border-radius: 6px; }
 
 .fa-solid,
