@@ -286,6 +286,11 @@ body {
   margin: 4px;
   background-color: #fefefe; }
 
+::selection {
+  background: #ec32a8;
+  color: black;
+  text-shadow: 1px 1px #e8e1e8; }
+
 footer {
   text-align: center;
   font-size: 30px;
