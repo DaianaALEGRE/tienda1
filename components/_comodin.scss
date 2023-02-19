@@ -28,7 +28,7 @@ a:hover {
 }
 
 
-/*titulos*/
+
 
 h1,
 h2,
@@ -73,7 +73,7 @@ img {
 
 }
 
-/*carrusel*/
+
 .carousel-control-next {
     right: 0%;
     top: 10%;
@@ -105,14 +105,15 @@ p {
     font-family: 'Trispace', sans-serif;
 }
 
-.card{
+.card {
     width: 18rem;
     margin: 12px;
-  
+
 }
+
 .btn {
-    height: 34px;
-    width: 91px;
+
+    @include tamanio(34px, 91px);
     margin: 10px;
     color: #c781d3;
     background: #cde2f7;
@@ -123,7 +124,7 @@ p {
 }
 
 .btn:hover {
-  background-color: $color;
+    background-color: $color;
 }
 
 .d-btn {
@@ -152,19 +153,23 @@ p {
     border-radius: 10px;
 
 }
-.row{
+
+.row {
     justify-content: center;
-   
-}
-.card-img, .card-img-top{
-    margin-top:12px;
 
 }
 
-.card-text{
+.card-img,
+.card-img-top {
+    margin-top: 12px;
+
+}
+
+.card-text {
     align-content: center;
     font-size: 15px;
 }
+
 body {
     margin: 4px;
     background-color: #fefefe;
